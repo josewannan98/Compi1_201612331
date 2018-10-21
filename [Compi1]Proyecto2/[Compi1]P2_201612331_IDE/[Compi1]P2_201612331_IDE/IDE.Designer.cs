@@ -37,12 +37,26 @@
             this.analizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lenguajeCbcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevoProyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevoArchivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cargarArchivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.abrirArchivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guardarComoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ejecutarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manualDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.label3 = new System.Windows.Forms.Label();
             this.treeView1 = new System.Windows.Forms.TreeView();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.listView1 = new System.Windows.Forms.ListView();
             this.label2 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -59,19 +73,10 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nuevoProyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nuevoArchivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cargarArchivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.abrirArchivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.guardarComoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.reporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ejecutarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.manualDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.notifyIcon4 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -155,6 +160,97 @@
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // archivoToolStripMenuItem
+            // 
+            this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevoProyectoToolStripMenuItem,
+            this.nuevoArchivoToolStripMenuItem,
+            this.cargarArchivoToolStripMenuItem,
+            this.abrirArchivoToolStripMenuItem,
+            this.guardarComoToolStripMenuItem,
+            this.salirToolStripMenuItem,
+            this.salirToolStripMenuItem1});
+            this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(99, 25);
+            this.archivoToolStripMenuItem.Text = "Archivo";
+            // 
+            // nuevoProyectoToolStripMenuItem
+            // 
+            this.nuevoProyectoToolStripMenuItem.Name = "nuevoProyectoToolStripMenuItem";
+            this.nuevoProyectoToolStripMenuItem.Size = new System.Drawing.Size(251, 26);
+            this.nuevoProyectoToolStripMenuItem.Text = "Nuevo Proyecto";
+            this.nuevoProyectoToolStripMenuItem.Click += new System.EventHandler(this.nuevoProyectoToolStripMenuItem_Click);
+            // 
+            // nuevoArchivoToolStripMenuItem
+            // 
+            this.nuevoArchivoToolStripMenuItem.Name = "nuevoArchivoToolStripMenuItem";
+            this.nuevoArchivoToolStripMenuItem.Size = new System.Drawing.Size(251, 26);
+            this.nuevoArchivoToolStripMenuItem.Text = "Nuevo Archivo";
+            // 
+            // cargarArchivoToolStripMenuItem
+            // 
+            this.cargarArchivoToolStripMenuItem.Name = "cargarArchivoToolStripMenuItem";
+            this.cargarArchivoToolStripMenuItem.Size = new System.Drawing.Size(251, 26);
+            this.cargarArchivoToolStripMenuItem.Text = "Cargar Proyecto";
+            // 
+            // abrirArchivoToolStripMenuItem
+            // 
+            this.abrirArchivoToolStripMenuItem.Name = "abrirArchivoToolStripMenuItem";
+            this.abrirArchivoToolStripMenuItem.Size = new System.Drawing.Size(251, 26);
+            this.abrirArchivoToolStripMenuItem.Text = "Guardar ";
+            // 
+            // guardarComoToolStripMenuItem
+            // 
+            this.guardarComoToolStripMenuItem.Name = "guardarComoToolStripMenuItem";
+            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(251, 26);
+            this.guardarComoToolStripMenuItem.Text = "Guardar Como";
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(251, 26);
+            this.salirToolStripMenuItem.Text = "Cerrar Pestaña";
+            // 
+            // salirToolStripMenuItem1
+            // 
+            this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
+            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(251, 26);
+            this.salirToolStripMenuItem1.Text = "Salir";
+            // 
+            // reporteToolStripMenuItem
+            // 
+            this.reporteToolStripMenuItem.Name = "reporteToolStripMenuItem";
+            this.reporteToolStripMenuItem.Size = new System.Drawing.Size(99, 25);
+            this.reporteToolStripMenuItem.Text = "Reporte";
+            // 
+            // ejecutarToolStripMenuItem
+            // 
+            this.ejecutarToolStripMenuItem.Name = "ejecutarToolStripMenuItem";
+            this.ejecutarToolStripMenuItem.Size = new System.Drawing.Size(110, 25);
+            this.ejecutarToolStripMenuItem.Text = "Ejecutar";
+            this.ejecutarToolStripMenuItem.Click += new System.EventHandler(this.ejecutarToolStripMenuItem_Click);
+            // 
+            // ayudaToolStripMenuItem
+            // 
+            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.acercaDeToolStripMenuItem,
+            this.manualDeUsuarioToolStripMenuItem});
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(77, 25);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
+            // acercaDeToolStripMenuItem
+            // 
+            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(273, 26);
+            this.acercaDeToolStripMenuItem.Text = "Acerca de...";
+            // 
+            // manualDeUsuarioToolStripMenuItem
+            // 
+            this.manualDeUsuarioToolStripMenuItem.Name = "manualDeUsuarioToolStripMenuItem";
+            this.manualDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(273, 26);
+            this.manualDeUsuarioToolStripMenuItem.Text = "Manual de Usuario";
+            // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -196,8 +292,8 @@
             // 
             // splitContainer2.Panel2
             // 
+            this.splitContainer2.Panel2.Controls.Add(this.listView1);
             this.splitContainer2.Panel2.Controls.Add(this.label2);
-            this.splitContainer2.Panel2.Controls.Add(this.listBox1);
             this.splitContainer2.Size = new System.Drawing.Size(383, 885);
             this.splitContainer2.SplitterDistance = 467;
             this.splitContainer2.TabIndex = 0;
@@ -215,10 +311,29 @@
             // treeView1
             // 
             this.errorProvider2.SetError(this.treeView1, "Directorio Invalido");
+            this.treeView1.ImageIndex = 0;
+            this.treeView1.ImageList = this.imageList1;
             this.treeView1.Location = new System.Drawing.Point(12, 35);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(357, 434);
+            this.treeView1.SelectedImageIndex = 0;
+            this.treeView1.Size = new System.Drawing.Size(357, 429);
             this.treeView1.TabIndex = 0;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "archivo");
+            this.imageList1.Images.SetKeyName(1, "folder");
+            // 
+            // listView1
+            // 
+            this.listView1.Location = new System.Drawing.Point(17, 35);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(352, 360);
+            this.listView1.TabIndex = 2;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.List;
             // 
             // label2
             // 
@@ -229,16 +344,6 @@
             this.label2.Size = new System.Drawing.Size(99, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Historial";
-            // 
-            // listBox1
-            // 
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(12, 32);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(357, 226);
-            this.listBox1.TabIndex = 0;
             // 
             // label6
             // 
@@ -272,6 +377,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.AccessibleDescription = "Seleccionar Archivo";
             this.pictureBox1.Image = global::_Compi1_P2_201612331_IDE.Properties.Resources.calculadora;
             this.pictureBox1.Location = new System.Drawing.Point(681, 12);
             this.pictureBox1.Name = "pictureBox1";
@@ -279,11 +385,13 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(395, 23);
+            this.comboBox1.MaxDropDownItems = 20;
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(269, 24);
             this.comboBox1.TabIndex = 5;
@@ -322,6 +430,7 @@
             // richTextBox2
             // 
             this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBox2.Enabled = false;
             this.richTextBox2.Location = new System.Drawing.Point(26, 530);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(1087, 232);
@@ -341,7 +450,6 @@
             this.ironyFCTB1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
             this.errorProvider2.SetError(this.ironyFCTB1, "El archivo Contiene Errores");
             this.errorProvider1.SetError(this.ironyFCTB1, "Errores Semanticos");
-            this.ironyFCTB1.Font = new System.Drawing.Font("Courier New", 9.75F);
             this.ironyFCTB1.HighlightingRangeType = FastColoredTextBoxNS.HighlightingRangeType.AllTextRange;
             this.ironyFCTB1.IsReplaceMode = false;
             this.ironyFCTB1.LineNumberColor = System.Drawing.Color.Blue;
@@ -394,94 +502,22 @@
             this.errorProvider2.ContainerControl = this;
             this.errorProvider2.Icon = ((System.Drawing.Icon)(resources.GetObject("errorProvider2.Icon")));
             // 
-            // archivoToolStripMenuItem
+            // saveFileDialog1
             // 
-            this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nuevoProyectoToolStripMenuItem,
-            this.nuevoArchivoToolStripMenuItem,
-            this.cargarArchivoToolStripMenuItem,
-            this.abrirArchivoToolStripMenuItem,
-            this.guardarComoToolStripMenuItem,
-            this.salirToolStripMenuItem,
-            this.salirToolStripMenuItem1});
-            this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(99, 25);
-            this.archivoToolStripMenuItem.Text = "Archivo";
+            this.saveFileDialog1.CheckFileExists = true;
+            this.saveFileDialog1.DefaultExt = "cbc";
+            this.saveFileDialog1.Filter = "cbc Files (*.cbc) | cbc Files (*.CBC)";
+            this.saveFileDialog1.InitialDirectory = "C:\\Users\\jose_\\Documents\\LenguajeCBCProjects";
+            this.saveFileDialog1.ShowHelp = true;
+            this.saveFileDialog1.Title = "Lenguaje CBC";
             // 
-            // nuevoProyectoToolStripMenuItem
+            // notifyIcon4
             // 
-            this.nuevoProyectoToolStripMenuItem.Name = "nuevoProyectoToolStripMenuItem";
-            this.nuevoProyectoToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
-            this.nuevoProyectoToolStripMenuItem.Text = "Nuevo Proyecto";
-            // 
-            // nuevoArchivoToolStripMenuItem
-            // 
-            this.nuevoArchivoToolStripMenuItem.Name = "nuevoArchivoToolStripMenuItem";
-            this.nuevoArchivoToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
-            this.nuevoArchivoToolStripMenuItem.Text = "Nuevo Archivo";
-            // 
-            // cargarArchivoToolStripMenuItem
-            // 
-            this.cargarArchivoToolStripMenuItem.Name = "cargarArchivoToolStripMenuItem";
-            this.cargarArchivoToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
-            this.cargarArchivoToolStripMenuItem.Text = "Cargar Archivo";
-            // 
-            // abrirArchivoToolStripMenuItem
-            // 
-            this.abrirArchivoToolStripMenuItem.Name = "abrirArchivoToolStripMenuItem";
-            this.abrirArchivoToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
-            this.abrirArchivoToolStripMenuItem.Text = "Guardar ";
-            // 
-            // guardarComoToolStripMenuItem
-            // 
-            this.guardarComoToolStripMenuItem.Name = "guardarComoToolStripMenuItem";
-            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
-            this.guardarComoToolStripMenuItem.Text = "Guardar Como";
-            // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(240, 26);
-            this.salirToolStripMenuItem.Text = "Cerrar Pestaña";
-            // 
-            // salirToolStripMenuItem1
-            // 
-            this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
-            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(240, 26);
-            this.salirToolStripMenuItem1.Text = "Salir";
-            // 
-            // reporteToolStripMenuItem
-            // 
-            this.reporteToolStripMenuItem.Name = "reporteToolStripMenuItem";
-            this.reporteToolStripMenuItem.Size = new System.Drawing.Size(99, 25);
-            this.reporteToolStripMenuItem.Text = "Reporte";
-            // 
-            // ejecutarToolStripMenuItem
-            // 
-            this.ejecutarToolStripMenuItem.Name = "ejecutarToolStripMenuItem";
-            this.ejecutarToolStripMenuItem.Size = new System.Drawing.Size(110, 25);
-            this.ejecutarToolStripMenuItem.Text = "Ejecutar";
-            // 
-            // ayudaToolStripMenuItem
-            // 
-            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.acercaDeToolStripMenuItem,
-            this.manualDeUsuarioToolStripMenuItem});
-            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(77, 25);
-            this.ayudaToolStripMenuItem.Text = "Ayuda";
-            // 
-            // acercaDeToolStripMenuItem
-            // 
-            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(273, 26);
-            this.acercaDeToolStripMenuItem.Text = "Acerca de...";
-            // 
-            // manualDeUsuarioToolStripMenuItem
-            // 
-            this.manualDeUsuarioToolStripMenuItem.Name = "manualDeUsuarioToolStripMenuItem";
-            this.manualDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(273, 26);
-            this.manualDeUsuarioToolStripMenuItem.Text = "Manual de Usuario";
+            this.notifyIcon4.BalloonTipText = "Archivo Guardado Correctamente";
+            this.notifyIcon4.BalloonTipTitle = "Guardar Archivo";
+            this.notifyIcon4.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon4.Icon")));
+            this.notifyIcon4.Text = "notifyIcon4";
+            this.notifyIcon4.Visible = true;
             // 
             // IDE
             // 
@@ -538,7 +574,6 @@
         private System.Windows.Forms.ToolStripMenuItem lenguajeCbcToolStripMenuItem;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.NotifyIcon notifyIcon2;
@@ -568,5 +603,11 @@
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manualDeUsuarioToolStripMenuItem;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.NotifyIcon notifyIcon4;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.ListView listView1;
     }
 }

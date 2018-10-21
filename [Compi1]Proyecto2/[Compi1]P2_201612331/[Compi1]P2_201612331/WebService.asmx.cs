@@ -1,6 +1,7 @@
 ﻿using Irony.Parsing;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
@@ -17,7 +18,7 @@ namespace _Compi1_P2_201612331
     // [System.Web.Script.Services.ScriptService]
     public class WebService : System.Web.Services.WebService
     {
-
+        String graph;
 
         [WebMethod]
         public string HelloWorld()
@@ -51,6 +52,7 @@ namespace _Compi1_P2_201612331
                 }
                 else
                 {
+                  
                     String Salida = "Build Succes, Tiempo de Ejecucion: " + arbol.ParseTimeMilliseconds.ToString()+ " millisegundos";
                     return Salida;
                 }
@@ -62,5 +64,7 @@ namespace _Compi1_P2_201612331
                 return "false";
             }
         }
+       
+      
     }
 }

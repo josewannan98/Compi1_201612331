@@ -17,3 +17,4 @@ C:\Users\jose_\Documents\[Compi1]Proyecto2\[Compi1]P2_201612331_IDE\[Compi1]P2_2
 C:\Users\jose_\Documents\[Compi1]Proyecto2\[Compi1]P2_201612331_IDE\[Compi1]P2_201612331_IDE\bin\Debug\IronyFCTB.pdb
 C:\Users\jose_\Documents\[Compi1]Proyecto2\[Compi1]P2_201612331_IDE\[Compi1]P2_201612331_IDE\bin\Debug\FastColoredTextBox.xml
 C:\Users\jose_\Documents\[Compi1]Proyecto2\[Compi1]P2_201612331_IDE\[Compi1]P2_201612331_IDE\obj\Debug\[Compi1]P2_201612331_IDE.csproj.CopyComplete
+C:\Users\jose_\Documents\[Compi1]Proyecto2\[Compi1]P2_201612331_IDE\[Compi1]P2_201612331_IDE\obj\Debug\_Compi1_P2_201612331_IDE.CrearProyectoCBC.resources
