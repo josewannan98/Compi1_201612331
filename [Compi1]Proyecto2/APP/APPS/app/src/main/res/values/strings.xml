@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CbC</string>
+    <string name="version_1_0_1">Version 1.0.1</string>
+    <string name="_10_11_2018">10/11/2018</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="email">Email</string>
+    <string name="todo">TODO</string>
+    <string name="nm">Nombre</string>
+    <string name="aps">Apellido</string>
+    <string name="dpis">Dpi</string>
+    <string name="title_activity_cb_c">CbC</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+</resources>
